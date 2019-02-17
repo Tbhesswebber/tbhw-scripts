@@ -1,0 +1,23 @@
+{
+  "name": "@tbhesswebber/tbhw-scripts",
+  "version": "0.0.1",
+  "description": "Script utility for personal use",
+  "main": "index.js",
+  "author": "Tanner B. Hess Webber <tb@hesswebber.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo 'No test command configured - get on that, punk!'",
+    "fire": "git checkout -b emergency && git add . && git commit -m 'emergency commit' --no-verify && git push --set-upstream origin emergency --no-verify"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tbhesswebber/tbhw-scripts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tbhesswebber/tbhw-scripts/issues"
+  },
+  "homepage": "https://github.com/Tbhesswebber/tbhw-scripts#readme"
+}
