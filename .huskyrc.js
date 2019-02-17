@@ -1,0 +1,8 @@
+hooksRules = {
+  hooks: {
+    'pre-commit': 'npm test',
+    'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS',
+  },
+};
+
+module.exports = hooksRules;
