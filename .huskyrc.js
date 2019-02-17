@@ -1,6 +1,6 @@
 hooksRules = {
   hooks: {
-    'pre-commit': 'npm test',
+    'pre-commit': 'npm run validate',
     'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS',
   },
 };
