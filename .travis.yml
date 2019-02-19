@@ -21,6 +21,5 @@ deploy:
   #* tells travis to deploy from a script
   provider: script
   script: npm run semantic-release
-  #* create deployment conditions
-  on:
-    - branch: stable
+  #* set deployment branch
+  branch: stable
