@@ -1,6 +1,6 @@
 {
   "name": "@tbhesswebber/tbhw-scripts",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "Script utility for personal use",
   "main": "index.js",
   "author": "Tanner B. Hess Webber <tb@hesswebber.com>",
@@ -14,14 +14,15 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint src --ext .js",
-    "validate": "npm-run-all --parallel test lint build"
+    "validate": "npm-run-all --parallel test lint build",
+    "semantic-release": "semantic-release"
   },
   "files": [
     "dist"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tbhesswebber/tbhw-scripts.git"
+    "url": "https://github.com/Tbhesswebber/tbhw-scripts.git"
   },
   "bugs": {
     "url": "https://github.com/Tbhesswebber/tbhw-scripts/issues"
@@ -34,6 +35,7 @@
     "@commitlint/cli": "~7.5.2",
     "@commitlint/config-conventional": "~7.5.0",
     "@commitlint/format": "~7.5.0",
+    "codecov": "~3.2.0",
     "commitizen": "~3.0.5",
     "commitlint": "~7.5.2",
     "crossenv": "0.0.2-security",
@@ -49,7 +51,8 @@
     "jest-extended": "~0.11.1",
     "npm-run-all": "~4.1.5",
     "prettier": "~1.16.4",
-    "rimraf": "~2.6.3"
+    "rimraf": "~2.6.3",
+    "semantic-release": "^15.13.3"
   },
   "dependencies": {}
 }

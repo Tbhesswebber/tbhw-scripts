@@ -1,0 +1,26 @@
+#* tells travis to run code in both linux and macOS
+os:
+  - linux
+  - osx
+#* establishes language
+#*    doesn't specify version to use .npmrc
+language: node_js
+#*  creates a cache using npm
+cache: npm
+#* only runs CI on following branches
+branches:
+  only:
+    #* master is the bucket for all pr's
+    - master
+    #* the stable release branch
+    - stable
+#* scripts to run
+script: npm run validate
+#* set deployment information
+deploy:
+  #* tells travis to deploy from a script
+  provider: script
+  script: npm run semantic-release
+  #* create deployment conditions
+  on:
+    - branch: stable
